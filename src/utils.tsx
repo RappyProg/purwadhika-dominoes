@@ -71,7 +71,7 @@ export const removeData = (
   dominoes: number[][] = [],
   num: number
 ): number[][] => {
-  for (let i = 0; i < dominoes.length; i++) {
+  for (let i = dominoes.length - 1; i >= 0; i--) {
     const total = dominoes[i][0] + dominoes[i][1];
     if (total === Number(num)) {
       dominoes.splice(i, 1);
