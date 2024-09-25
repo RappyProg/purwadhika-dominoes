@@ -1,0 +1,41 @@
+.domino-card{
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    box-shadow: 2px black;
+    border-radius: 5%;
+    display: flex;
+    background-color: white;
+    margin: 10px;
+    position: relative;
+
+}
+
+.domino-half{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-right: solid black 1px;
+}
+
+.domino-half:last-child{
+    border-right: none;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.top-left{top:10%; left: 10%}
+.top-right{top:10%; right:10%}
+.middle{top:50%; left:50%; transform: translate(-50%, -50%);}
+.bottom-left { bottom: 10%; left: 10%; }
+.bottom-right { bottom: 10%; right: 10%; }
+.middle-left { top: 50%; left: 10%; transform: translateY(-50%); }
+.middle-right { top: 50%; right: 10%; transform: translateY(-50%); }
